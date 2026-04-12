@@ -1,0 +1,226 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pageHeader {
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+}
+
+.card {
+    background: var(--color-bg-card);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border);
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formLabel {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.typeContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.typeCard {
+    border: 2px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    background: transparent;
+}
+
+.typeCardActive {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.typeCardActive .typeTitle {
+    color: #3b82f6;
+}
+
+.typeIcon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.typeTitle {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 0.75rem;
+    background: var(--color-bg-main);
+    color: var(--color-text-primary);
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submitBtn {
+    background: #3b82f6;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    justify-content: center;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Success Message */
+.successMessage {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.successIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #10b981;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetBtn {
+    background: transparent;
+    color: #3b82f6;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Admin Table */
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--color-text-muted);
+    letter-spacing: 0.1em;
+}
+
+.table td {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.table tr:hover td {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.badge-bug { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.badge-suggestion { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+.badge-question { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+
+.statusSelect {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-main);
+    color: var(--color-text-primary);
+    font-size: 0.75rem;
+    font-weight: bold;
+}

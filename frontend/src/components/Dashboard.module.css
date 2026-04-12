@@ -1,0 +1,262 @@
+.dashboardContainer {
+    animation: fadeIn 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Welcome Section */
+.welcomeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-primary-700), var(--color-primary-500));
+    padding: var(--spacing-4);
+    border-radius: var(--radius-xl);
+    color: white;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--spacing-2);
+}
+
+.welcomeInfo h1 {
+    margin: 0;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.welcomeInfo p {
+    margin: var(--spacing-1) 0 0;
+    opacity: 0.9;
+    font-size: var(--font-size-lg);
+}
+
+.clockContainer {
+    text-align: right;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timeDisplay {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    display: block;
+}
+
+.dateDisplay {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+/* Stats Grid */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-3);
+}
+
+.statCard {
+    background: var(--color-bg-card);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    position: relative;
+    overflow: hidden;
+}
+
+.statCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-300);
+}
+
+.cardIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-1);
+}
+
+.iconBlue {
+    background: var(--color-primary-100);
+    color: var(--color-primary-600);
+}
+
+.iconGreen {
+    background: var(--color-success-light);
+    color: var(--color-success);
+}
+
+.iconOrange {
+    background: var(--color-accent-100);
+    color: var(--color-accent-500);
+}
+
+.statCard h3 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary);
+}
+
+.statContent {
+    flex: 1;
+}
+
+.statValue {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-600);
+    margin: var(--spacing-1) 0;
+}
+
+.statLabel {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.cardAction {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    color: var(--color-primary-500);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    transition: gap 0.2s;
+}
+
+.cardAction:hover {
+    gap: var(--spacing-2);
+}
+
+/* Recent Activity Section */
+.bottomSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-3);
+}
+
+.activityCard {
+    background: var(--color-bg-card);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+    border: 1px solid var(--color-border);
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-3);
+}
+
+.sectionHeader h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.activityList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.activityItem {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2);
+    border-radius: var(--radius-md);
+    transition: background 0.2s;
+}
+
+.activityItem:hover {
+    background: var(--color-bg-hover);
+}
+
+.activityDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary-400);
+}
+
+.activityContent {
+    flex: 1;
+}
+
+.activityTitle {
+    display: block;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+}
+
+.activityTime {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+}
+
+.badgeSuccess {
+    background: var(--color-success-light);
+    color: var(--color-success);
+}
+
+.badgeInfo {
+    background: var(--color-primary-100);
+    color: var(--color-primary-700);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .bottomSection {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcomeHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-3);
+    }
+
+    .clockContainer {
+        text-align: left;
+        width: 100%;
+    }
+}

@@ -1,0 +1,397 @@
+/* TasksCalendar.css */
+
+/* --- Container Principal avec effet de carte --- */
+.tasks-calendar-container {
+    height: 750px;
+    background: var(--color-bg-card);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+    font-family: var(--font-family-base);
+    border: 1px solid var(--color-border);
+}
+
+/* --- Override React Big Calendar Defaults --- */
+
+/* Grille et bordures plus subtiles */
+.rbc-calendar {
+    color: var(--color-text-primary);
+}
+
+.rbc-month-view,
+.rbc-time-view,
+.rbc-header,
+.rbc-month-row,
+.rbc-day-bg {
+    border-color: var(--color-border-light) !important;
+}
+
+.rbc-header {
+    padding: 12px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    border-bottom: 2px solid #f1f5f9 !important;
+}
+
+.rbc-off-range-bg {
+    background-color: var(--color-bg-main);
+}
+
+.rbc-day-bg {
+    transition: background 0.15s ease;
+}
+
+.rbc-day-bg:hover {
+    background: rgba(58, 155, 220, 0.04);
+}
+
+.rbc-today {
+    background-color: rgba(58, 155, 220, 0.12);
+    /* Background plus prononcé */
+    position: relative;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 2px #3A9BDC;
+    /* Contour visible */
+}
+
+/* Cercle pour le jour actuel - Plus visible et contrasté */
+.rbc-today::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 3px solid #3A9BDC;
+    background: rgba(58, 155, 220, 0.15);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Numéro du jour actuel plus contrasté */
+.rbc-today .rbc-button-link {
+    color: #0F172A;
+    font-weight: 700;
+}
+
+/* --- Custom Toolbar Styles --- */
+.rbc-toolbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.rbc-toolbar-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rbc-toolbar-label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-left: 16px;
+}
+
+/* Boutons de navigation Moderne */
+.rbc-btn-group-nav {
+    display: flex;
+    gap: 4px;
+    background-color: #f1f5f9;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.rbc-btn-group-nav button {
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 6px;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.rbc-btn-group-nav button:hover {
+    color: #3b82f6;
+    border-color: #bfdbfe;
+}
+
+.rbc-btn-today {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.rbc-btn-today:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+/* Boutons de vue (Mois/Semaine/Jour) - Segmented Control style */
+.rbc-toolbar-group button {
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    color: #64748b;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.18s ease;
+}
+
+.rbc-toolbar-group button:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    transform: translateY(-1px);
+}
+
+.rbc-toolbar-group button.rbc-active {
+    background-color: #3A9BDC;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(58, 155, 220, 0.25);
+}
+
+/* --- Custom Event Card Styles --- */
+.rbc-event {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.rbc-event.rbc-selected .rbc-event-custom {
+    box-shadow: 0 0 0 2px #3b82f6, 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.rbc-event-custom {
+    background: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+    /* Ombre plus visible */
+    font-size: 0.85rem;
+    color: #334155;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #cbd5e1;
+    /* Bordure plus contrastée */
+    /* La bordure gauche est gérée en inline style par le composant */
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.rbc-event-custom:hover {
+    transform: scale(1.03);
+    /* Zoom léger mais visible */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    /* Ombre forte au hover */
+    z-index: 10;
+}
+
+.rbc-event-title {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+/* --- Drag and Drop Overrides --- */
+.rbc-addons-dnd-resizable-span {
+    border: none !important;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* =========== INDICATEURS JOURS =========== */
+
+/* Badge compteur d'événements */
+.rbc-date-cell {
+    position: relative;
+}
+
+.event-count-badge {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: #3A9BDC;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* =========== VUE SEMAINE (WEEK) =========== */
+
+/* En-tête des jours de la semaine */
+.rbc-time-header-content {
+    border-left: 1px solid #f1f5f9;
+}
+
+.rbc-time-header-cell {
+    min-height: 50px;
+}
+
+/* Colonne de temps (gauche) */
+.rbc-time-slot {
+    border-top: 1px solid #f8fafc;
+}
+
+.rbc-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Grille horaire */
+.rbc-time-content {
+    border-top: 1px solid #e2e8f0;
+}
+
+.rbc-day-slot .rbc-time-slot {
+    border-top: 1px solid #f8fafc;
+}
+
+/* Aujourd'hui dans la vue semaine */
+.rbc-today.rbc-time-column {
+    background-color: rgba(58, 155, 220, 0.04);
+}
+
+/* Événements dans la vue semaine/jour */
+.rbc-time-slot .rbc-event,
+.rbc-day-slot .rbc-event {
+    border: none;
+    background: transparent !important;
+    padding: 0;
+}
+
+.rbc-time-slot .rbc-event .rbc-event-custom,
+.rbc-day-slot .rbc-event .rbc-event-custom {
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Événement sélectionné dans vue semaine/jour */
+.rbc-time-slot .rbc-event.rbc-selected .rbc-event-custom,
+.rbc-day-slot .rbc-event.rbc-selected .rbc-event-custom {
+    box-shadow: 0 0 0 2px #3b82f6, 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ligne de l'heure actuelle (now) */
+.rbc-current-time-indicator {
+    background-color: #EF4444;
+    height: 2px;
+}
+
+.rbc-current-time-indicator::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #EF4444;
+}
+
+/* =========== VUE JOUR (DAY) =========== */
+
+/* En-tête jour */
+.rbc-time-header-content .rbc-header {
+    border-bottom: 2px solid #e2e8f0;
+    padding: 16px 0;
+}
+
+.rbc-time-header-content .rbc-header.rbc-today {
+    background-color: rgba(58, 155, 220, 0.08);
+    border-bottom-color: #3A9BDC;
+    font-weight: 700;
+}
+
+/* Espacement des heures */
+.rbc-timeslot-group {
+    min-height: 60px;
+    border-left: 1px solid #f1f5f9;
+}
+
+/* =========== RESPONSIVE WEEK & DAY =========== */
+
+@media (max-width: 768px) {
+    .rbc-time-header-content {
+        font-size: 0.75rem;
+    }
+
+    .rbc-label {
+        font-size: 0.65rem;
+    }
+
+    .rbc-timeslot-group {
+        min-height: 40px;
+    }
+}
+
+/* =========== DARK MODE - WEEK & DAY =========== */
+
+[data-theme="dark"] .tasks-calendar-container {
+    background: #1E293B;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .rbc-calendar {
+    color: #F1F5F9;
+}
+
+[data-theme="dark"] .rbc-time-slot,
+[data-theme="dark"] .rbc-day-slot .rbc-time-slot {
+    border-top-color: #334155;
+}
+
+[data-theme="dark"] .rbc-time-content {
+    border-top-color: #475569;
+}
+
+[data-theme="dark"] .rbc-label {
+    color: #94A3B8;
+}
+
+[data-theme="dark"] .rbc-today.rbc-time-column {
+    background-color: rgba(58, 155, 220, 0.1);
+}
+
+[data-theme="dark"] .rbc-time-header-content .rbc-header {
+    border-bottom-color: #475569;
+}
+
+[data-theme="dark"] .rbc-time-header-content .rbc-header.rbc-today {
+    background-color: rgba(58, 155, 220, 0.15);
+    border-bottom-color: #3A9BDC;
+}
+
+[data-theme="dark"] .rbc-timeslot-group {
+    border-left-color: #334155;
+}

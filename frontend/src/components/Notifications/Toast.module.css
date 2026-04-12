@@ -1,0 +1,221 @@
+/* Toast.module.css */
+.toastContainer {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: none;
+}
+
+.toastItem {
+    pointer-events: auto;
+    width: 320px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    overflow: hidden;
+    animation: slideIn 0.3s ease-out forwards;
+    position: relative;
+    border: 1px solid var(--color-gray-100);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.priority_critical {
+    border: 2px solid var(--color-danger);
+    background-color: #fffafb;
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both, slideIn 0.3s ease-out forwards;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.toastItem.exit {
+    animation: slideOut 0.3s ease-in forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.indicator {
+    width: 6px;
+    flex-shrink: 0;
+}
+
+.type_info .indicator {
+    background-color: var(--color-primary-500);
+}
+
+.type_success .indicator {
+    background-color: var(--color-success);
+}
+
+.type_warning .indicator {
+    background-color: var(--color-warning);
+}
+
+.type_error .indicator {
+    background-color: var(--color-danger);
+}
+
+.type_task .indicator {
+    background-color: #0284c7;
+}
+
+.type_finance .indicator {
+    background-color: #16a34a;
+}
+
+.content {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    gap: 12px;
+}
+
+.icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.type_info .icon {
+    color: var(--color-primary-500);
+}
+
+.type_success .icon {
+    color: var(--color-success);
+}
+
+.type_warning .icon {
+    color: var(--color-warning);
+}
+
+.type_error .icon {
+    color: var(--color-danger);
+}
+
+.type_task .icon {
+    color: #0284c7;
+}
+
+.type_finance .icon {
+    color: #16a34a;
+}
+
+.body {
+    flex: 1;
+}
+
+.title {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.message {
+    margin: 0;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.closeBtn:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-text-primary);
+}
+
+.progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+    animation: shrink 5s linear forwards;
+}
+
+.priority_critical .progress {
+    animation-duration: 10s;
+}
+
+.type_info .progress {
+    background-color: var(--color-primary-500);
+}
+
+.type_success .progress {
+    background-color: var(--color-success);
+}
+
+.type_warning .progress {
+    background-color: var(--color-warning);
+}
+
+.type_error .progress {
+    background-color: var(--color-danger);
+}
+
+.type_task .progress {
+    background-color: #0284c7;
+}
+
+.type_finance .progress {
+    background-color: #16a34a;
+}
+
+@keyframes shrink {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+    }
+}

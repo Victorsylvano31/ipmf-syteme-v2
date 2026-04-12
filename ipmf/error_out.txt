@@ -1,0 +1,1 @@
+IntegrityError('UNIQUE constraint failed: tasks_tache.numero')

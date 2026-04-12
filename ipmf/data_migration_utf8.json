@@ -1,0 +1,820 @@
+[
+{
+  "model": "users.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$QY2rXyyopvpPYFkwesJbZW$pOY53lViklXJSD2FVyPe1hZKgUU+raSzMrXng9gXqCU=",
+    "last_login": "2026-02-02T08:16:44.283Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "victorsylvano0@gmail.com",
+    "is_staff": true,
+    "date_joined": "2025-10-30T20:15:35.857Z",
+    "role": "agent",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2025-10-30T20:15:36.192Z",
+    "date_updated": "2025-10-30T20:15:36.192Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$FngCBbCi5twwXE7b4tOoaW$uTRh1noaaz0F5xeprM0Fr8ZlefbMclOxYjPKBfNckEE=",
+    "last_login": "2025-11-02T18:56:43.489Z",
+    "is_superuser": true,
+    "username": "sylvano",
+    "first_name": "Sylvano",
+    "last_name": "Victor",
+    "email": "Victorsylvano31@gmail.com",
+    "is_staff": true,
+    "date_joined": "2025-10-30T23:46:13Z",
+    "role": "admin",
+    "telephone": "0387998312",
+    "departement": "dev",
+    "date_embauche": "2025-10-31",
+    "is_active": true,
+    "date_created": "2025-10-30T23:46:14.688Z",
+    "date_updated": "2025-10-30T23:47:27.881Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 3,
+  "fields": {
+    "password": "!8IQVGyPtgrfX0mQNXS7xfEufXlcPFbSdtIPlNaM0",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "essaie",
+    "first_name": "",
+    "last_name": "",
+    "email": "31@gmail.com",
+    "is_staff": false,
+    "date_joined": "2025-10-31T15:21:20.479Z",
+    "role": "agent",
+    "telephone": "0387998312",
+    "departement": "noob",
+    "date_embauche": "2025-10-31",
+    "is_active": true,
+    "date_created": "2025-10-31T15:21:20.577Z",
+    "date_updated": "2025-10-31T15:21:20.577Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 4,
+  "fields": {
+    "password": "!AJ2ff60VM3UvOH2ZQcSDkvkF3EcjiQIE9CuZG5VB",
+    "last_login": "2025-10-31T15:26:45Z",
+    "is_superuser": false,
+    "username": "ghost",
+    "first_name": "bot",
+    "last_name": "bot",
+    "email": "noob@gmail.com",
+    "is_staff": false,
+    "date_joined": "2025-10-31T15:21:54Z",
+    "role": "agent",
+    "telephone": "0387998312",
+    "departement": "noob",
+    "date_embauche": "2025-10-31",
+    "is_active": true,
+    "date_created": "2025-10-31T15:21:54.080Z",
+    "date_updated": "2025-10-31T15:26:57.891Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$gPs5zw8stcozuMO3VrttgF$iGsrt2lVEdGUU2met93GxiSUisGisOWwu1ViqHPNhAA=",
+    "last_login": "2026-02-02T11:01:21.231Z",
+    "is_superuser": false,
+    "username": "DG",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "date_joined": "2025-10-31T16:14:44Z",
+    "role": "dg",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2025-10-31T16:14:45.279Z",
+    "date_updated": "2026-02-02T08:20:43.999Z",
+    "groups": [],
+    "user_permissions": [
+      76,
+      53,
+      54
+    ]
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 6,
+  "fields": {
+    "password": "!nSUlY4Kbzs1b2rHyp7JHj1rRLmVXY7tNRNzivS8k",
+    "last_login": "2025-10-31T16:19:10Z",
+    "is_superuser": false,
+    "username": "Blanche",
+    "first_name": "Blanche",
+    "last_name": "**",
+    "email": "Blanche@gmail.com",
+    "is_staff": false,
+    "date_joined": "2025-10-31T16:18:37Z",
+    "role": "comptable",
+    "telephone": "0387998621",
+    "departement": "controleur drala",
+    "date_embauche": "2025-10-31",
+    "is_active": true,
+    "date_created": "2025-10-31T16:18:37.900Z",
+    "date_updated": "2025-10-31T16:19:13.982Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$IkBbqrrPu0JNSTbKyoBBj3$0foRt7awAnZSmtYoEe4O3SQ7KFovF83vRkwgikkwULg=",
+    "last_login": "2026-02-02T07:41:46.889Z",
+    "is_superuser": false,
+    "username": "sayo",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "date_joined": "2025-10-31T16:19:34Z",
+    "role": "caisse",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2025-10-31T16:19:34.019Z",
+    "date_updated": "2026-01-31T20:35:53.673Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 8,
+  "fields": {
+    "password": "!S28nUTGtR6lauH8J1QpsHt4AvviXNWEH0YxoHbjG",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Rayan",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "date_joined": "2025-10-31T16:20:57Z",
+    "role": "superviseur_it",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2025-10-31T16:20:57.004Z",
+    "date_updated": "2025-10-31T16:21:02.473Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$H79SuDfLFdRI7ithQWIEAm$y21wrY2nXwnXVV88zOkyo6NxFTODzXliL65XMEFRM6c=",
+    "last_login": "2026-01-14T23:07:48.856Z",
+    "is_superuser": true,
+    "username": "admin_test",
+    "first_name": "Sylvano",
+    "last_name": "VICTOR",
+    "email": "admin@test.com",
+    "is_staff": true,
+    "date_joined": "2026-01-14T21:16:12.270Z",
+    "role": "admin",
+    "telephone": "0387998312",
+    "departement": "responsable systheme informatique",
+    "date_embauche": "2026-01-01",
+    "is_active": true,
+    "date_created": "2026-01-14T21:16:12.609Z",
+    "date_updated": "2026-01-15T21:49:46.823Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$zclGXscruLS09P8TRdiN5D$nzSwQU4PB7A0gsxfhs2w2Ya9IiR6B5tCTY4lHTSUVFc=",
+    "last_login": "2026-01-14T21:28:06.897Z",
+    "is_superuser": false,
+    "username": "agent_test",
+    "first_name": "",
+    "last_name": "",
+    "email": "agent@test.com",
+    "is_staff": false,
+    "date_joined": "2026-01-14T21:16:12.625Z",
+    "role": "agent",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2026-01-14T21:16:12.963Z",
+    "date_updated": "2026-01-14T21:16:12.963Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$aE7Ydn8l4VKzofSmeZicNM$4JQOH/v/jvEs22jlhr0QC71w4oe+6adBvCuXtPdCRdY=",
+    "last_login": "2026-01-15T11:25:58.836Z",
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "date_joined": "2026-01-14T21:48:24.179Z",
+    "role": "agent",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2026-01-14T21:48:25.127Z",
+    "date_updated": "2026-01-14T22:57:40.856Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$VnfxGz3DroU9PWzBc6YdBl$GJwCCbJQJLsKK7ee+zXqFBGp+JF37UDYS5LARDp/Ss4=",
+    "last_login": "2026-02-02T08:17:59.574Z",
+    "is_superuser": false,
+    "username": "sylvano01",
+    "first_name": "",
+    "last_name": "",
+    "email": "Victorsylvano01@gmail.com",
+    "is_staff": false,
+    "date_joined": "2026-01-15T22:05:45.013Z",
+    "role": "dg",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2026-01-15T22:05:45.942Z",
+    "date_updated": "2026-02-01T17:24:07.054Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ozlojMhfrPXD5CdARKReAo$h/8zghlMJdcMOGCR5bRVqZJOw5JI0IX98f6uV7kEIBQ=",
+    "last_login": "2026-01-16T19:21:49.773Z",
+    "is_superuser": false,
+    "username": "test2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "date_joined": "2026-01-16T10:57:42.176Z",
+    "role": "agent",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2026-01-16T10:57:43.415Z",
+    "date_updated": "2026-01-16T10:57:43.415Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$QY7nBIiHhfNVttupReNzYV$N1UEzBLtBd7geNaPcLeAvP5K1K/2swIGjQLaPnT+UEc=",
+    "last_login": "2026-01-31T20:34:21.121Z",
+    "is_superuser": false,
+    "username": "msayo",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "date_joined": "2026-01-31T16:15:03.740Z",
+    "role": "comptable",
+    "telephone": "",
+    "departement": "",
+    "date_embauche": null,
+    "is_active": true,
+    "date_created": "2026-01-31T16:15:07.328Z",
+    "date_updated": "2026-01-31T18:33:29.470Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$RCDWgDmTiDui5VydY7mS0J$k+7f5cwj8knJcej7jwNgdqUA7Y+kQIkO90ppr4rt3SA=",
+    "last_login": "2026-02-07T06:59:27.999Z",
+    "is_superuser": false,
+    "username": "sadasylva",
+    "first_name": "Harisanda",
+    "last_name": "Sambatra",
+    "email": "Victorsylvano31@gmail.com",
+    "is_staff": false,
+    "date_joined": "2026-01-31T18:35:09.770Z",
+    "role": "comptable",
+    "telephone": "0387998312",
+    "departement": "Reine",
+    "date_embauche": "2026-01-31",
+    "is_active": true,
+    "date_created": "2026-01-31T18:35:09.771Z",
+    "date_updated": "2026-02-02T11:05:48.878Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-02-02T08:16:44.299Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-01-14T20:55:32.031Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": 3,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-01-14T20:55:32.031Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 5,
+  "fields": {
+    "user": 5,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-02-02T11:01:21.255Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 6,
+  "fields": {
+    "user": 6,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-01-14T20:55:32.031Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 7,
+  "fields": {
+    "user": 7,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-02-02T07:41:46.901Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 8,
+  "fields": {
+    "user": 8,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T20:55:32.015Z",
+    "date_updated": "2026-01-14T20:55:32.031Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 9,
+  "fields": {
+    "user": 9,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T21:16:12.615Z",
+    "date_updated": "2026-01-15T21:49:46.843Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 10,
+  "fields": {
+    "user": 10,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T21:16:12.968Z",
+    "date_updated": "2026-01-14T21:28:06.905Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 11,
+  "fields": {
+    "user": 11,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-14T21:48:25.144Z",
+    "date_updated": "2026-01-15T11:25:58.869Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 12,
+  "fields": {
+    "user": 12,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-15T22:05:45.957Z",
+    "date_updated": "2026-02-02T08:17:59.587Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 13,
+  "fields": {
+    "user": 13,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-16T10:57:43.421Z",
+    "date_updated": "2026-01-16T19:21:49.791Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 14,
+  "fields": {
+    "user": 14,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-31T16:15:07.349Z",
+    "date_updated": "2026-01-31T20:34:21.139Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 15,
+  "fields": {
+    "user": 15,
+    "signature": "",
+    "photo": "",
+    "notifications_active": true,
+    "theme_preference": "light",
+    "language": "fr",
+    "date_created": "2026-01-31T18:35:09.783Z",
+    "date_updated": "2026-02-07T06:59:28.013Z"
+  }
+},
+{
+  "model": "finances.entreeargent",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-10-31T16:11:32.325Z",
+    "updated_at": "2026-01-31T17:13:14.333Z",
+    "numero": "ENT-2025-001",
+    "montant": "50000.00",
+    "motif": "don",
+    "mode_paiement": "carte",
+    "date_entree": "2025-10-31",
+    "created_by": 1,
+    "statut": "en_attente",
+    "piece_justificative": "",
+    "commentaire": "",
+    "historique": ""
+  }
+},
+{
+  "model": "finances.entreeargent",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-01-31T17:18:19.448Z",
+    "updated_at": "2026-01-31T17:18:37.995Z",
+    "numero": "ENT-2026-001",
+    "montant": "20000.00",
+    "motif": "droit",
+    "mode_paiement": "especes",
+    "date_entree": "2026-01-31",
+    "created_by": 14,
+    "statut": "confirmee",
+    "piece_justificative": "entrees/pieces_justificatives/2026/01/Project.png",
+    "commentaire": "droit ana pianatra",
+    "historique": ""
+  }
+},
+{
+  "model": "finances.entreeargent",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-01-31T17:20:09.220Z",
+    "updated_at": "2026-01-31T17:20:09.220Z",
+    "numero": "ENT-2026-002",
+    "montant": "1000000.00",
+    "motif": "frais de scolarite",
+    "mode_paiement": "especes",
+    "date_entree": "2026-01-31",
+    "created_by": 14,
+    "statut": "en_attente",
+    "piece_justificative": "",
+    "commentaire": "vola miditra",
+    "historique": ""
+  }
+},
+{
+  "model": "finances.entreeargent",
+  "pk": 4,
+  "fields": {
+    "created_at": "2026-01-31T17:36:57.206Z",
+    "updated_at": "2026-01-31T17:39:47.676Z",
+    "numero": "ENT-2026-003",
+    "montant": "20000.00",
+    "motif": "frais de scolarite",
+    "mode_paiement": "especes",
+    "date_entree": "2026-01-31",
+    "created_by": 14,
+    "statut": "confirmee",
+    "piece_justificative": "",
+    "commentaire": "",
+    "historique": ""
+  }
+},
+{
+  "model": "finances.entreeargent",
+  "pk": 5,
+  "fields": {
+    "created_at": "2026-01-31T17:39:31.593Z",
+    "updated_at": "2026-01-31T17:39:42.045Z",
+    "numero": "ENT-2026-004",
+    "montant": "50000000.00",
+    "motif": "educat",
+    "mode_paiement": "especes",
+    "date_entree": "2026-01-31",
+    "created_by": 14,
+    "statut": "confirmee",
+    "piece_justificative": "",
+    "commentaire": "",
+    "historique": ""
+  }
+},
+{
+  "model": "finances.depense",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-10-31T16:23:02.854Z",
+    "updated_at": "2026-01-31T17:13:14.248Z",
+    "numero": "DEP-2025-001",
+    "montant": "20000.00",
+    "motif": "gasoil",
+    "categorie": "mission",
+    "quantite": 4,
+    "prix_unitaire": "5000.00",
+    "created_by": 1,
+    "statut": "payee",
+    "piece_justificative": "",
+    "commentaire": "",
+    "historique": "",
+    "verifie_par": null,
+    "valide_par_comptable": null,
+    "valide_par_dg": null,
+    "date_verification": null,
+    "date_validation_comptable": null,
+    "date_validation_dg": null,
+    "date_paiement": null,
+    "commentaire_validation": ""
+  }
+},
+{
+  "model": "finances.depense",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-01-31T17:19:27.743Z",
+    "updated_at": "2026-01-31T17:19:27.743Z",
+    "numero": "DEP-2026-001",
+    "montant": "50000.00",
+    "motif": "gasoil",
+    "categorie": "fonctionnement",
+    "quantite": 10,
+    "prix_unitaire": "5000.00",
+    "created_by": 14,
+    "statut": "en_attente",
+    "piece_justificative": "depenses/pieces_justificatives/2026/01/Service.png",
+    "commentaire": "entina anao exercice",
+    "historique": "",
+    "verifie_par": null,
+    "valide_par_comptable": null,
+    "valide_par_dg": null,
+    "date_verification": null,
+    "date_validation_comptable": null,
+    "date_validation_dg": null,
+    "date_paiement": null,
+    "commentaire_validation": ""
+  }
+},
+{
+  "model": "finances.depense",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-01-31T17:47:15.446Z",
+    "updated_at": "2026-01-31T17:47:15.446Z",
+    "numero": "DEP-2026-002",
+    "montant": "200000.00",
+    "motif": "gasoil",
+    "categorie": "mission",
+    "quantite": 50000,
+    "prix_unitaire": "4.00",
+    "created_by": 14,
+    "statut": "en_attente",
+    "piece_justificative": "",
+    "commentaire": "sf",
+    "historique": "",
+    "verifie_par": null,
+    "valide_par_comptable": null,
+    "valide_par_dg": null,
+    "date_verification": null,
+    "date_validation_comptable": null,
+    "date_validation_dg": null,
+    "date_paiement": null,
+    "commentaire_validation": ""
+  }
+},
+{
+  "model": "tasks.tache",
+  "pk": 21,
+  "fields": {
+    "numero": "TSK-2026-001",
+    "titre": "PRATIQUE PELLE",
+    "description": "mangadindady",
+    "date_creation": "2026-01-31T14:34:40.013Z",
+    "date_debut": "2026-01-31T07:29:00Z",
+    "date_echeance": "2026-02-01T14:34:00Z",
+    "priorite": "moyenne",
+    "statut": "validee",
+    "createur": 12,
+    "agent_assignÚ": 1,
+    "budget_alloue": "2000.00",
+    "resultat": "",
+    "piece_jointe_resultat": "",
+    "date_debut_reelle": "2026-01-31T15:28:13.947Z",
+    "date_fin_reelle": "2026-01-31T15:28:15.354Z",
+    "commentaire_validation": "",
+    "valide_par": 12,
+    "date_validation": "2026-01-31T15:32:45.947Z"
+  }
+},
+{
+  "model": "tasks.tache",
+  "pk": 22,
+  "fields": {
+    "numero": "TSK-2026-002",
+    "titre": "PRATIQUE PELLE",
+    "description": "mangady",
+    "date_creation": "2026-01-31T20:39:29.513Z",
+    "date_debut": "2026-02-03T20:38:00Z",
+    "date_echeance": "2026-01-28T20:38:00Z",
+    "priorite": "moyenne",
+    "statut": "creee",
+    "createur": 12,
+    "agent_assignÚ": null,
+    "budget_alloue": null,
+    "resultat": "",
+    "piece_jointe_resultat": "",
+    "date_debut_reelle": null,
+    "date_fin_reelle": null,
+    "commentaire_validation": "",
+    "valide_par": null,
+    "date_validation": null
+  }
+},
+{
+  "model": "tasks.commentairetache",
+  "pk": 6,
+  "fields": {
+    "tache": 21,
+    "auteur": 12,
+    "message": "TÔche validÚe: ",
+    "piece_jointe": "",
+    "date_creation": "2026-01-31T15:32:45.960Z"
+  }
+},
+{
+  "model": "audit.loginhistory",
+  "pk": 1,
+  "fields": {
+    "utilisateur": 1,
+    "timestamp": "2025-10-30T20:30:13.897Z",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0",
+    "reussi": true,
+    "raison_echec": "",
+    "session_key": "87g9d3koofw9xp0hle0k7p3au2i11kes"
+  }
+},
+{
+  "model": "audit.loginhistory",
+  "pk": 2,
+  "fields": {
+    "utilisateur": 1,
+    "timestamp": "2025-10-30T20:34:12.994Z",
+    "ip_address": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0",
+    "reussi": true,
+    "raison_echec": "",
+    "session_key": "znfuafx9iuyr4zs66d86gm6ff7amibq8"
+  }
+}
+]

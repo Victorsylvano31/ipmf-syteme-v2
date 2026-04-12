@@ -1,0 +1,1 @@
+['en_attente', 'verifiee', 'validee', 'payee', 'rejetee']
